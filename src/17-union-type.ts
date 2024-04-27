@@ -57,9 +57,10 @@ confirmDialog('yes')
 
 // template literal type
 type vertical =  "top" | "middle" | "bottom"
-type horizontal = "left" | "center" | "right"
+type horizontal = "left" | "center" | "right" 
 type alignment = `${vertical}-${horizontal}`
-function showExample10(input:alignment){
+
+function showExample10(input:alignment):void{
     console.log(input)
 }
 showExample10('top-center')
