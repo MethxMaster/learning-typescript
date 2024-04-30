@@ -21,7 +21,7 @@ interface PatternReport{
     reportincome():void
 }
 class EmployeeClass extends patternData implements PatternReport{
-    workYear:number
+    workYear:number 
     inputSalary:number
     constructor(id:number,name:string,inputSalary:number,workYear:number){
         super(id,name,inputSalary)
