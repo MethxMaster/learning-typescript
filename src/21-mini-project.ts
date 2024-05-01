@@ -41,9 +41,12 @@ function createList(input:tasks){
     checkList.checked = input.completed     //set initial
 
     checkList.addEventListener('change',(()=>{
+        console.log('render - enter event listener')
+        console.log(input)
         input.completed = checkList.checked
         updateData()
     }))
+
     console.log('render-create list')
 
     itemList.append(input.taskName)         //add task name

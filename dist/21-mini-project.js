@@ -30,6 +30,8 @@ function createList(input) {
     checkList.type = 'checkbox'; //set attribute
     checkList.checked = input.completed; //set initial
     checkList.addEventListener('change', (() => {
+        console.log('render - enter event listener');
+        console.log(input);
         input.completed = checkList.checked;
         updateData();
     }));
